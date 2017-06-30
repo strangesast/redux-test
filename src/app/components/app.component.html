@@ -1,0 +1,7 @@
+<div>
+  <button (click)="test()">Toast</button>
+
+  <div *ngFor="let folder of folders$ | async">
+    {{ folder.name }} ({{ folder.shortname }})
+  </div>
+</div>
